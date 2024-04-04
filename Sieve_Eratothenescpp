@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int nums;
+    cin >> nums;
+    if (nums == 1)
+    {
+        cout << "Number is not a prime or composite";
+    }
+    else if (!(nums % 2 == 0 || nums % 4 == 0 || nums % 6 == 0 || nums % 8 == 0 || nums % 10 == 0))
+    {
+        if (nums == 3 || nums == 5 || nums == 7)
+        {
+            cout << "Number is a prime";
+        }
+        else if ((nums % 3 == 0 || nums % 5 == 0 || nums % 7 == 0))
+        {
+
+            cout << "Number is a not prime";
+        }
+        else
+        {
+            cout << "Number is a  prime";
+        }
+    }
+    else
+    {
+        cout << "Number is not a prime";
+    }
+}
